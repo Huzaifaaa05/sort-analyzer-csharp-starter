@@ -3,9 +3,11 @@
 using System;
 using System.IO;
 using System.Diagnostics;
+ 
+Console.Clear();
+#nullable disable
 
-class MainClass {
-    public static void Main (string[] args) {
+
         // LOAD DATA FILES INTO ARRAYS
         int[] randomData = loadDataArray("data-files/random-values.txt");
         int[] reversedData = loadDataArray("data-files/reversed-values.txt");
@@ -24,10 +26,10 @@ class MainClass {
         // bubbleSort(randomData);
         // timer.Stop();
         // Console.WriteLine($"Bubble Sort Random Data: {timer.Elapsed}");
-    }
-
+        
+    
     // Function to create an array of integers from provided data file
-    public static int[] loadDataArray(string fileName) {
+     static int[] loadDataArray(string fileName) {
         // Read Text File by Line 
         string[] lines = File.ReadAllLines(fileName);
 
@@ -41,18 +43,91 @@ class MainClass {
         return tempData;
     }
     
-    public static void printIntArray(int[] array, int start, int stop) {
+     static void printIntArray(int[] array, int start, int stop) {
         // Print out array elements at index values from start to stop 
         for (int i = start; i < stop; i++) {
             Console.WriteLine(array[i]);
         }
     }
 
-    // Bubble Sort
+// Bubble Sort
+    static void bubbleSort(int[] arr) {
+    for (int i = 0; i < arr.Length - 1; i++) {
+        for (int j = 0; j < arr.Length - i - 1; j++) {
+            if (arr[j] > arr[j + 1]) {
+                int temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
+            }
+        }
+    }
+}
 
 
     // Selection Sort
-
+static void selectionSort(int[] anArray)
+{
+    int n = anArray.Length;
+    for (int i = 0; i < n - 1; i++)
+    {
+        int minIndex = i;
+        for (int j = i + 1; j < n; j++)
+        {
+            if (anArray[j] < anArray[minIndex])
+            {
+                minIndex = j;
+            }
+        }
+        if (minIndex != i)
+        {
+            int temp = anArray[i];
+            anArray[i] = anArray[minIndex];
+            anArray[minIndex] = temp;
+        }
+    }
+}
 
     // Insertion Sort
+    static void insertionSort(int[] anArray)
+{
+    int n = anArray.Length;
+    for (int i = 1; i < n; i++)
+    {
+        int current = anArray[i];
+        int j = i - 1;
+        while (j >= 0 && anArray[j] > current)
+        {
+            anArray[j + 1] = anArray[j];
+            j--;
+        }
+        anArray[j + 1] = current;
+    }
 }
+
+
+bool loop = true;
+           while (loop) {
+    Console.WriteLine("1. Run Algorithms for Random Array");
+    Console.WriteLine("2. Run Algorithms for Reversed Array");
+    Console.WriteLine("3. Run Algorithms for Nearly Sorted Array");
+    Console.WriteLine("4. Run Algorithms for Few Unique Array");
+    Console.WriteLine("5. Exit");
+    string selection = Console.ReadLine();
+    if (selection == "1") {
+        var timerBubble = new Stopwatch();
+        var timerSelection = new Stopwatch();
+        var timerInsertion = new Stopwatch();
+        timerBubble.Start();
+        timerSelection.Start();
+        timerInsertion.Start();
+        bubbleSort(randomData);
+        timerBubble.Stop();
+        Console.WriteLine($"Bubble Sort Random Data: {timerBubble.Elapsed}");
+        selectionSort(randomData);
+        timerSelection.Stop();
+        Console.WriteLine($"Selection Sort Random Data: {timerSelection.Elapsed}");
+        insertionSort(randomData);
+        timerInsertion.Stop();
+        Console.WriteLine($"Insertion Sort Random Data: {timerInsertion.Elapsed}");
+    }
+    }
