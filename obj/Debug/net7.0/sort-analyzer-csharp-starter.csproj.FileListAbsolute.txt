@@ -1,0 +1,15 @@
+F:\GitHub\sort-analyzer-csharp-starter\bin\Debug\net7.0\sort-analyzer-csharp-starter.exe
+F:\GitHub\sort-analyzer-csharp-starter\bin\Debug\net7.0\sort-analyzer-csharp-starter.deps.json
+F:\GitHub\sort-analyzer-csharp-starter\bin\Debug\net7.0\sort-analyzer-csharp-starter.runtimeconfig.json
+F:\GitHub\sort-analyzer-csharp-starter\bin\Debug\net7.0\sort-analyzer-csharp-starter.dll
+F:\GitHub\sort-analyzer-csharp-starter\bin\Debug\net7.0\sort-analyzer-csharp-starter.pdb
+F:\GitHub\sort-analyzer-csharp-starter\obj\Debug\net7.0\sort-analyzer-csharp-starter.csproj.AssemblyReference.cache
+F:\GitHub\sort-analyzer-csharp-starter\obj\Debug\net7.0\sort-analyzer-csharp-starter.GeneratedMSBuildEditorConfig.editorconfig
+F:\GitHub\sort-analyzer-csharp-starter\obj\Debug\net7.0\sort-analyzer-csharp-starter.AssemblyInfoInputs.cache
+F:\GitHub\sort-analyzer-csharp-starter\obj\Debug\net7.0\sort-analyzer-csharp-starter.AssemblyInfo.cs
+F:\GitHub\sort-analyzer-csharp-starter\obj\Debug\net7.0\sort-analyzer-csharp-starter.csproj.CoreCompileInputs.cache
+F:\GitHub\sort-analyzer-csharp-starter\obj\Debug\net7.0\sort-analyzer-csharp-starter.dll
+F:\GitHub\sort-analyzer-csharp-starter\obj\Debug\net7.0\refint\sort-analyzer-csharp-starter.dll
+F:\GitHub\sort-analyzer-csharp-starter\obj\Debug\net7.0\sort-analyzer-csharp-starter.pdb
+F:\GitHub\sort-analyzer-csharp-starter\obj\Debug\net7.0\sort-analyzer-csharp-starter.genruntimeconfig.cache
+F:\GitHub\sort-analyzer-csharp-starter\obj\Debug\net7.0\ref\sort-analyzer-csharp-starter.dll

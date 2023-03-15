@@ -47,4 +47,12 @@ class MainClass {
             Console.WriteLine(array[i]);
         }
     }
+
+    // Bubble Sort
+
+
+    // Selection Sort
+
+
+    // Insertion Sort
 }

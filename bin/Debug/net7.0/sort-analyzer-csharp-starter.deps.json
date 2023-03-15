@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "sort-analyzer-csharp-starter/1.0.0": {
+        "runtime": {
+          "sort-analyzer-csharp-starter.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "sort-analyzer-csharp-starter/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
