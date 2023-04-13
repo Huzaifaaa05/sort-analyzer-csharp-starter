@@ -62,8 +62,6 @@ Console.Clear();
         }
     }
 }
-
-
     // Selection Sort
 static void selectionSort(int[] anArray)
 {
@@ -129,5 +127,56 @@ bool loop = true;
         insertionSort(randomData);
         timerInsertion.Stop();
         Console.WriteLine($"Insertion Sort Random Data: {timerInsertion.Elapsed}");
+    } else if (selection == "2") {
+        var timerBubble = new Stopwatch();
+        var timerSelection = new Stopwatch();
+        var timerInsertion = new Stopwatch();
+        timerBubble.Start();
+        timerSelection.Start();
+        timerInsertion.Start();
+        bubbleSort(reversedData);
+        timerBubble.Stop();
+        Console.WriteLine($"Bubble Sort Reversed Data: {timerBubble.Elapsed}");
+        selectionSort(reversedData);
+        timerSelection.Stop();
+        Console.WriteLine($"Selection Sort Reversed Data: {timerSelection.Elapsed}");
+        insertionSort(reversedData);
+        timerInsertion.Stop();
+        Console.WriteLine($"Insertion Sort Reversed Data: {timerInsertion.Elapsed}");
+    } else if (selection == "3") {
+        var timerBubble = new Stopwatch();
+        var timerSelection = new Stopwatch();
+        var timerInsertion = new Stopwatch();
+        timerBubble.Start();
+        timerSelection.Start();
+        timerInsertion.Start();
+        bubbleSort(nearlySortedData);
+        timerBubble.Stop();
+        Console.WriteLine($"Bubble Sort Nearly Sorted Data: {timerBubble.Elapsed}");
+        selectionSort(nearlySortedData);
+        timerSelection.Stop();
+        Console.WriteLine($"Selection Sort Nearly Sorted Data: {timerSelection.Elapsed}");
+        insertionSort(nearlySortedData);
+        timerInsertion.Stop();
+        Console.WriteLine($"Insertion Sort Nearly Sorted Data: {timerInsertion.Elapsed}");
+    } else if (selection == "4") {
+        var timerBubble = new Stopwatch();
+        var timerSelection = new Stopwatch();
+        var timerInsertion = new Stopwatch();
+        timerBubble.Start();
+        timerSelection.Start();
+        timerInsertion.Start();
+        bubbleSort(fewUniqueData);
+        timerBubble.Stop();
+        Console.WriteLine($"Bubble Sort Few Unique Data: {timerBubble.Elapsed}");
+        selectionSort(fewUniqueData);
+        timerSelection.Stop();
+        Console.WriteLine($"Selection Sort Few Unique Data: {timerSelection.Elapsed}");
+        insertionSort(fewUniqueData);
+        timerInsertion.Stop();
+        Console.WriteLine($"Insertion Sort Few Unique Data: {timerInsertion.Elapsed}");
+    } else if (selection == "5") {
+        Console.WriteLine("Ending Program...");
+        loop = false;
     }
-    }
+}
